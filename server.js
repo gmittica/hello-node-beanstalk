@@ -3,7 +3,7 @@ var express = require('express'),
     port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-  res.send('Questa è una prova con nuovo step manuale!')
+  res.send('Webserver versione 1')
 })
 
 app.listen(port, function(){
