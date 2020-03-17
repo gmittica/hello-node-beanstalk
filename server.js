@@ -3,7 +3,10 @@ var express = require('express'),
     port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-  res.send('Webserver versione 5 con PIPELINE')
+  res.json([{
+    "id": 1,
+    "title": "Questo è un titolo"
+  }])
 })
 
 app.listen(port, function(){
